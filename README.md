@@ -5,7 +5,7 @@
 ### Test Steps:
 1. Navigate to the login page [https://www.saucedemo.com/](https://www.saucedemo.com/)
 2. Fill in username `Locked_out_user`
-3. Fill in password (Password field content here)
+3. Fill in password 'secret_sauce'
 4. Click ‘Login’
 5. Verify locked out message
 
