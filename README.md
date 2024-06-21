@@ -1,11 +1,13 @@
 # saucedemo
-Test case: Verify that the user gets locked out message
 
-Test steps
-Navigate to the login page https://www.saucedemo.com/ 
-Fill in username Locked_out_user
-Fill in password  
-Click ‘Login’
-Verify locked out message
+## Test Case: Verify that the user gets locked out message
 
-Result: User is unable to login and gets a locked out message.
+### Test Steps:
+1. Navigate to the login page [https://www.saucedemo.com/](https://www.saucedemo.com/)
+2. Fill in username `Locked_out_user`
+3. Fill in password (Password field content here)
+4. Click ‘Login’
+5. Verify locked out message
+
+### Result:
+- User is unable to login and gets a locked out message.
