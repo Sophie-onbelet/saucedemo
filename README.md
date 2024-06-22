@@ -1,13 +1,41 @@
 # saucedemo
+This is a project to test the saucedemo website: 
+https://www.saucedemo.com/  
 
-## Test Case: Verify that the user gets locked out message
+## Installation
 
-### Test Steps:
-1. Navigate to the login page [https://www.saucedemo.com/](https://www.saucedemo.com/)
-2. Fill in username `Locked_out_user`
-3. Fill in password 'secret_sauce'
-4. Click ‘Login’
-5. Verify locked out message
+To set up and run this project locally, follow these steps:
 
-### Result:
-- User is unable to login and gets a locked out message.
+1. **Fork the Repository:**
+   - Go to the GitHub repository page: [https://github.com/Sophie-onbelet/saucedemo](https://github.com/Sophie-onbelet/saucedemo)
+   - Click the "Fork" button in the top-right corner to create your own copy of the repository.
+
+2. **Clone the Forked Repository:**
+   - Open your terminal or command prompt.
+   - Run the following command to clone your forked repository to your local machine:
+     ```sh
+     git clone https://github.com/YOUR-USERNAME/saucedemo.git
+     ```
+   - Replace `YOUR-USERNAME` with your GitHub username.
+   - Navigate into the project directory:
+     ```sh
+     cd saucedemo
+     ```
+3. **Install Dependencies:**
+   - Run the following command to install the necessary dependencies:
+     ```sh
+     npm install
+     ```
+
+4. **Set Environment Variables:**
+   - Create a `.env` file in the root directory of the project and add the following:
+     ```plaintext
+     LOCKEDOUT_USER=locked_out_user
+     PASSWORD=secret_sauce
+     ```
+
+To run the tests, use the following command:
+```sh
+npx playwright test
+
+
