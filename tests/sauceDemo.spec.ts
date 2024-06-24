@@ -6,14 +6,11 @@ test.describe("test saucedemo website", () => {
     const loginPage = new LoginPage(page);
     const userName = process.env.LOCKEDOUT_USER;
     const passWord = process.env.PASSWORD;
+    const errorText = "Epic sadface: Sorry, this user has been locked out.";
 
     await loginPage.goToSaucePage();
-    await loginPage.fillLogin(userName, passWord);
+    await loginPage.fillLogin(process.env.LOCKEDOUT_USER, process.env.PASSWORD);
 
-    const errorMessage = page.locator('[data-test="error"]');
-    await expect(errorMessage).toBeVisible();
-    await expect(errorMessage).toHaveText(
-      /Epic sadface: Sorry, this user has been locked out./
-    );
+    await loginPage.lockedOutMessage(errorText);
   });
 });
