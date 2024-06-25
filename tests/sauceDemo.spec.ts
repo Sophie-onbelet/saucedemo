@@ -9,7 +9,7 @@ test.describe("test saucedemo website", () => {
     const errorText = "Epic sadface: Sorry, this user has been locked out.";
 
     await loginPage.goToSaucePage();
-    await loginPage.fillLogin(process.env.LOCKEDOUT_USER, process.env.PASSWORD);
+    await loginPage.fillLogin(process.env.LOCKEDOUT_USER!, process.env.PASSWORD!);
 
     await loginPage.lockedOutMessage(errorText);
   });
