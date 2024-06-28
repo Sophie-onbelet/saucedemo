@@ -1,4 +1,4 @@
-import { Locator, Page, expect } from "@playwright/test";
+import { Locator, Page, expect } from '@playwright/test';
 
 export class LoginPage {
   page: Page;
@@ -16,7 +16,7 @@ export class LoginPage {
   }
 
   async goToSaucePage() {
-    await this.page.goto("https://www.saucedemo.com/");
+    await this.page.goto('https://www.saucedemo.com/');
   }
 
   async fillLogin(username: string, password: string) {

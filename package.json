@@ -1,17 +1,36 @@
 {
   "name": "saucedemo-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a project to test the saucedemo website:  https://www.saucedemo.com/",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@faker-js/faker": "^8.4.1",
     "@playwright/test": "^1.44.1",
-    "@types/node": "^20.14.7"
+    "@types/node": "^20.14.7",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "globals": "^15.6.0",
+    "prettier": "3.3.2",
+    "typescript-eslint": "^7.14.1"
   },
   "dependencies": {
     "dotenv": "^16.4.5"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sophie-onbelet/saucedemo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sophie-onbelet/saucedemo/issues"
+  },
+  "homepage": "https://github.com/Sophie-onbelet/saucedemo#readme"
 }
