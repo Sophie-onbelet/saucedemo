@@ -1,4 +1,5 @@
 import { Locator, Page, expect } from '@playwright/test';
+import { ProductsPage } from '../pages/ProductsPage';
 
 export class LoginPage {
   page: Page;
@@ -23,6 +24,7 @@ export class LoginPage {
     await this.username.fill(username);
     await this.password.fill(password);
     await this.submit.click();
+    return new ProductsPage(this.page); 
   }
 
   async lockedOutMessage(message: string) {

@@ -1,5 +1,6 @@
 import { Locator, Page } from '@playwright/test';
 import { User } from '../models/User';
+import { CheckOutOverview } from '../pages/OverviewPage';
 
 export class YourInformationPage {
   page: Page;
@@ -29,5 +30,6 @@ export class YourInformationPage {
     await this.lastName.fill(user.lastName);
     await this.postalCode.fill(user.postalCode);
     await this.continueButton.click();
+    return new CheckOutOverview(this.page); 
   }
 }

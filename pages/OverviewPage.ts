@@ -1,4 +1,5 @@
 import { Locator, Page, expect } from '@playwright/test';
+import { CheckOutCompletePage } from './CheckOutCompletePage';
 
 export class CheckOutOverview {
   page: Page;
@@ -28,5 +29,6 @@ export class CheckOutOverview {
 
   async checkOutShoppingCart() {
     await this.finishButton.click();
+    return new CheckOutCompletePage(this.page);
   }
 }
