@@ -7,7 +7,7 @@ test.describe('test saucedemo website', () => {
     const loginPage = new LoginPage(page);
     const user = new User();
 
-    //Login
+    //Login with standard user
     await loginPage.goToSaucePage();
     const productsPage = await loginPage.fillLogin(process.env.STANDARD_USER!, process.env.PASSWORD!);
 
@@ -26,7 +26,7 @@ test.describe('test saucedemo website', () => {
     await checkOutCompletePage.checkCorrectPage();
     await checkOutCompletePage.checkOrderCompleted();
 
-    //Go back to the HomePage
+    //Go back to HomePage
     await checkOutCompletePage.goBackHome();
   });
 });
