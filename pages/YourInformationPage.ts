@@ -30,6 +30,6 @@ export class YourInformationPage {
     await this.lastName.fill(user.lastName);
     await this.postalCode.fill(user.postalCode);
     await this.continueButton.click();
-    return new CheckOutOverview(this.page); 
+    return new CheckOutOverview(this.page);
   }
 }

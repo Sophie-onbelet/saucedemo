@@ -24,7 +24,7 @@ export class LoginPage {
     await this.username.fill(username);
     await this.password.fill(password);
     await this.submit.click();
-    return new ProductsPage(this.page); 
+    return new ProductsPage(this.page);
   }
 
   async lockedOutMessage(message: string) {

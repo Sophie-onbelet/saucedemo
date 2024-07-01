@@ -1,7 +1,6 @@
 import { Locator, Page, expect } from '@playwright/test';
 import { YourInformationPage } from './YourInformationPage';
 
-
 export class ShoppingCartPage {
   page: Page;
   inventoryItem: Locator;

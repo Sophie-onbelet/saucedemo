@@ -65,6 +65,6 @@ export class ProductsPage {
 
   async goToShoppingCart() {
     await this.shoppingCart.click();
-    return new ShoppingCartPage(this.page); 
+    return new ShoppingCartPage(this.page);
   }
 }
